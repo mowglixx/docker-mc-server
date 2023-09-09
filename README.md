@@ -1,2 +1,3 @@
 # docker-mc-server
-docker-compose practice with a Minecraft server
+
+Docker Compose practice with a Minecraft server
