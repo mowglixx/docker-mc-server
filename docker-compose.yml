@@ -14,8 +14,8 @@ services:
     ports:
       - 25565:25565
     volumes:
-      - ./logs/waterfall:/opt/waterfall/server/logs
-      - ./plugins/waterfall:/opt/waterfall/server/plugins
+      - ./logs/waterfall:/opt/waterfall/server/logs:rw
+      - ./plugins/waterfall:/opt/waterfall/server/plugins:ro
 
 networks:
   extBridge: { driver: bridge }
