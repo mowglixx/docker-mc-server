@@ -19,11 +19,10 @@ services:
   survival:
     image: "marctv/minecraft-papermc-server:latest"
     restart: always
-    container_name: "mcserver"
     env_file:
       - survival.env
     volumes:
-      - "/home/pi/mcserver:/data:rw"
+      - ./worlds/survival:/data:rw
     networks:
       - extBridge
       - minecraft
