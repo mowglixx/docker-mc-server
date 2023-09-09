@@ -9,7 +9,7 @@ services:
     stdin_open: true
     tty: true
     networks:
-      - bridge
+      - extBridge
       - minecraft
     ports:
       - 25565:25565
@@ -18,5 +18,5 @@ services:
       - ./plugins/waterfall:/opt/waterfall/server/plugins
 
 networks:
-  minecraft: { internal: true }
   extBridge: { driver: bridge }
+  minecraft: { internal: true }
